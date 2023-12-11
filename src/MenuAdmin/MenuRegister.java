@@ -38,7 +38,7 @@ public class MenuRegister extends JPanel {
 		panelPatients.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		panelPatients.setBorder(new LineBorder(new Color(10, 59, 129)));
 		panelPatients.setBackground(new Color(255, 255, 255));
-		panelPatients.setBounds(8, 19, 213, 193);
+		panelPatients.setBounds(20, 19, 213, 193);
 		add(panelPatients);
 		panelPatients.setLayout(null);
 		
@@ -50,7 +50,7 @@ public class MenuRegister extends JPanel {
 		JLabel FPatients = new JLabel("");
 		FPatients.setHorizontalAlignment(SwingConstants.CENTER);
 		FPatients.setHorizontalTextPosition(SwingConstants.CENTER);
-		FPatients.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\Rpatient (2).png"));
+		FPatients.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\Rpatient (2).png"));
 		FPatients.setBounds(68, 41, 89, 94);
 		panelPatients.add(FPatients);
 		
@@ -67,7 +67,7 @@ public class MenuRegister extends JPanel {
 		panelPatients.add(separator_3);
 		
 		JLabel FPatientsAzul = new JLabel("");
-		FPatientsAzul.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\Rpatient W.png"));
+		FPatientsAzul.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\Rpatient W.png"));
 		FPatientsAzul.setHorizontalTextPosition(SwingConstants.CENTER);
 		FPatientsAzul.setHorizontalAlignment(SwingConstants.CENTER);
 		FPatientsAzul.setBounds(68, 41, 89, 94);
@@ -86,7 +86,7 @@ public class MenuRegister extends JPanel {
 		panelDoctor.setLayout(null);
 		panelDoctor.setBorder(new LineBorder(new Color(10, 59, 129)));
 		panelDoctor.setBackground(new Color(255, 255, 255));
-		panelDoctor.setBounds(241, 19, 213, 193);
+		panelDoctor.setBounds(253, 19, 213, 193);
 		add(panelDoctor);
 		
 		JSeparator separator_1 = new JSeparator();
@@ -97,7 +97,7 @@ public class MenuRegister extends JPanel {
 		JLabel FDoctor = new JLabel("");
 		FDoctor.setHorizontalAlignment(SwingConstants.CENTER);
 		FDoctor.setHorizontalTextPosition(SwingConstants.CENTER);
-		FDoctor.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\doctor.png"));
+		FDoctor.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\doctor.png"));
 		FDoctor.setBounds(62, 37, 89, 94);
 		panelDoctor.add(FDoctor);
 		
@@ -114,7 +114,7 @@ public class MenuRegister extends JPanel {
 		panelDoctor.add(separator_4);
 		
 		JLabel lblNewLabel_6 = new JLabel("");
-		lblNewLabel_6.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\doctor (1).png"));
+		lblNewLabel_6.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\doctor (1).png"));
 		lblNewLabel_6.setHorizontalTextPosition(SwingConstants.CENTER);
 		lblNewLabel_6.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_6.setBounds(62, 37, 89, 94);
@@ -132,7 +132,7 @@ public class MenuRegister extends JPanel {
 		panelAppointment.setLayout(null);
 		panelAppointment.setBorder(new LineBorder(new Color(10, 59, 129)));
 		panelAppointment.setBackground(new Color(255, 255, 255));
-		panelAppointment.setBounds(8, 236, 213, 193);
+		panelAppointment.setBounds(20, 236, 213, 193);
 		add(panelAppointment);
 		
 		JSeparator separator_2 = new JSeparator();
@@ -141,7 +141,7 @@ public class MenuRegister extends JPanel {
 		panelAppointment.add(separator_2);
 		
 		JLabel FAppoint = new JLabel("");
-		FAppoint.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\medical-appointment.png"));
+		FAppoint.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\medical-appointment.png"));
 		FAppoint.setHorizontalTextPosition(SwingConstants.CENTER);
 		FAppoint.setHorizontalAlignment(SwingConstants.CENTER);
 		FAppoint.setBounds(62, 35, 89, 94);
@@ -160,7 +160,7 @@ public class MenuRegister extends JPanel {
 		panelAppointment.add(separator_2_2);
 		
 		JLabel FAppointAzul = new JLabel("");
-		FAppointAzul.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\medical-appointment (1).png"));
+		FAppointAzul.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\medical-appointment (1).png"));
 		FAppointAzul.setHorizontalTextPosition(SwingConstants.CENTER);
 		FAppointAzul.setHorizontalAlignment(SwingConstants.CENTER);
 		FAppointAzul.setBounds(62, 35, 89, 94);
@@ -178,7 +178,7 @@ public class MenuRegister extends JPanel {
 		panelProcedures.setLayout(null);
 		panelProcedures.setBorder(new LineBorder(new Color(10, 59, 129)));
 		panelProcedures.setBackground(new Color(255, 255, 255));
-		panelProcedures.setBounds(241, 236, 213, 193);
+		panelProcedures.setBounds(253, 236, 213, 193);
 		add(panelProcedures);
 		
 		JSeparator separator_2_1 = new JSeparator();
@@ -187,7 +187,7 @@ public class MenuRegister extends JPanel {
 		panelProcedures.add(separator_2_1);
 		
 		JLabel FProcedures = new JLabel("");
-		FProcedures.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\gear.png"));
+		FProcedures.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\gear.png"));
 		FProcedures.setHorizontalTextPosition(SwingConstants.CENTER);
 		FProcedures.setHorizontalAlignment(SwingConstants.CENTER);
 		FProcedures.setBounds(63, 35, 89, 94);
@@ -206,7 +206,7 @@ public class MenuRegister extends JPanel {
 		panelProcedures.add(separator_4_1);
 		
 		JLabel FProceduresAzul = new JLabel("");
-		FProceduresAzul.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\gear (1).png"));
+		FProceduresAzul.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\gear (1).png"));
 		FProceduresAzul.setHorizontalTextPosition(SwingConstants.CENTER);
 		FProceduresAzul.setHorizontalAlignment(SwingConstants.CENTER);
 		FProceduresAzul.setBounds(63, 35, 89, 94);
@@ -214,8 +214,8 @@ public class MenuRegister extends JPanel {
 		
 		pintar(panelProcedures, lblprocedures, FProcedures);
 		
-		JLabel lblNewLabel_4 = new JLabel("");
-		lblNewLabel_4.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\9df3722f9a8265f473ef6f1503279b80.jpg"));
+		JLabel lblNewLabel_4 = new JLabel("New label");
+		lblNewLabel_4.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\9df3722f9a8265f473ef6f1503279b80.jpg"));
 		lblNewLabel_4.setBounds(0, 0, 481, 452);
 		add(lblNewLabel_4);
 	}

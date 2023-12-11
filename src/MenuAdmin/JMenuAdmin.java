@@ -9,8 +9,10 @@ import MenuRegisters.RegisterDoctor;
 import MenuRegisters.RegisterProcess;
 import MenuRegisters.Pacientes;
 import MenuRegisters.RegistrarCitas;
+import Paneles.Bills;
 import Paneles.Citas;
 import Paneles.Home;
+import Paneles.Pays;
 import ToolsMethods.Tools;
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -21,7 +23,7 @@ import javax.swing.ImageIcon;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.Window.Type;
-
+import javax.swing.SwingConstants;
 
 public class JMenuAdmin implements Ventana {
 
@@ -113,12 +115,12 @@ public class JMenuAdmin implements Ventana {
 		panelHome.setLayout(null);
 		
 		FHome = new JLabel("");
-		FHome.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\home.png"));
+		FHome.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\home.png"));
 		FHome.setBounds(33, 4, 32, 43);
 		panelHome.add(FHome);
 		
 		FHomeAzul = new JLabel("");
-		FHomeAzul.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\home azul.png"));
+		FHomeAzul.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\home azul.png"));
 		FHomeAzul.setBounds(33, 4, 32, 43);
 		panelHome.add(FHomeAzul);
 		
@@ -144,12 +146,12 @@ public class JMenuAdmin implements Ventana {
 		panelAppoint.setLayout(null);
 		
 		FAppoint = new JLabel("");
-		FAppoint.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\calendar.png"));
+		FAppoint.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\calendar.png"));
 		FAppoint.setBounds(36, 5, 32, 43);
 		panelAppoint.add(FAppoint);
 		
 		FAppointAzul = new JLabel("");
-		FAppointAzul.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\calendarAzul.png"));
+		FAppointAzul.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\calendarAzul.png"));
 		FAppointAzul.setBounds(36, 5, 32, 43);
 		panelAppoint.add(FAppointAzul);
 		
@@ -175,12 +177,12 @@ public class JMenuAdmin implements Ventana {
 		panelRegister.setLayout(null);
 		
 		FRegister = new JLabel("");
-		FRegister.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\profile (1)22.png"));
+		FRegister.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\patient.png"));
 		FRegister.setBounds(36, 5, 32, 43);
 		panelRegister.add(FRegister);
 		
 		FRegisterAzul = new JLabel("");
-		FRegisterAzul.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\profile (2)2.png"));
+		FRegisterAzul.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\patientAzul.png"));
 		FRegisterAzul.setBounds(36, 5, 32, 43);
 		panelRegister.add(FRegisterAzul);
 		
@@ -191,9 +193,73 @@ public class JMenuAdmin implements Ventana {
 		panelRegister.add(lblRegister);
 		
 		T.pintarPanelYLabel(panelRegister, lblRegister, FRegister, blanco,azul);
-
 		
-
+		panelPays = new JPanel();
+		panelPays.setVisible(false);
+		panelPays.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent e) {
+				ShowPays();
+			}
+		});
+		panelPays.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+		panelPays.setBackground(new Color(10, 59, 129));
+		panelPays.setBounds(-5, 246, 208, 54);
+		panel.add(panelPays);
+		panelPays.setLayout(null);
+		
+		FPays = new JLabel("");
+		FPays.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\bank-card.png"));
+		FPays.setBounds(35, 5, 32, 43);
+		panelPays.add(FPays);
+		
+		FPaysAzul = new JLabel("");
+		FPaysAzul.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\bank-card (1).png"));
+		FPaysAzul.setBounds(37, 5, 32, 43);
+		panelPays.add(FPaysAzul);
+		
+		lblPayments = new JLabel("Payments");
+		lblPayments.setHorizontalTextPosition(SwingConstants.CENTER);
+		lblPayments.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPayments.setForeground(Color.WHITE);
+		lblPayments.setFont(new Font("Source Sans Pro", Font.BOLD, 12));
+		lblPayments.setBounds(70, 20, 60, 14);
+		panelPays.add(lblPayments);
+		
+		T.pintarPanelYLabel(panelPays, lblPayments ,FPays, blanco,azul);
+		
+		JPanel panelBills = new JPanel();
+		panelBills.setVisible(false);
+		panelBills.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent e) {
+				ShowBills();
+			}
+		});
+		panelBills.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+		panelBills.setLayout(null);
+		panelBills.setBackground(new Color(10, 59, 129));
+		panelBills.setBounds(-5, 300, 208, 54);
+		panel.add(panelBills);
+		
+		JLabel FUser = new JLabel("");
+		FUser.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\invoice (1).png"));
+		FUser.setBounds(35, 4, 32, 43);
+		panelBills.add(FUser);
+		
+		JLabel FUserAzul = new JLabel("");
+		FUserAzul.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\invoice.png"));
+		FUserAzul.setBounds(35, 4, 32, 43);
+		panelBills.add(FUserAzul);
+		
+		JLabel LblUser = new JLabel("Bills");
+		LblUser.setHorizontalTextPosition(SwingConstants.CENTER);
+		LblUser.setHorizontalAlignment(SwingConstants.CENTER);
+		T.pintarPanelYLabel(panelBills, LblUser, FUser, blanco,azul);
+		LblUser.setForeground(Color.WHITE);
+		LblUser.setFont(new Font("Source Sans Pro", Font.BOLD, 12));
+		LblUser.setBounds(74, 19, 28, 14);
+		panelBills.add(LblUser);
 			
 	}
 	
@@ -250,6 +316,14 @@ public class JMenuAdmin implements Ventana {
 			contenedor.repaint();
 		}
 		
+		public void ShowPays() {
+			EliminarVentanas();
+			Pays pa = new Pays();
+			pa.setBounds(0, 0, 481, 452);
+			contenedor.add(pa, BorderLayout.CENTER);
+			contenedor.revalidate();
+			contenedor.repaint();
+		}
 		
 		public void ShowMenuRegister() {
 			EliminarVentanas();
@@ -260,6 +334,14 @@ public class JMenuAdmin implements Ventana {
 			contenedor.repaint();
 		}
 		
+		public void ShowBills() {
+			EliminarVentanas();
+			Bills bi = new Bills();
+			bi.setBounds(0, 0, 481, 452);
+			contenedor.add(bi, BorderLayout.CENTER);
+			contenedor.revalidate();
+			contenedor.repaint();
+		}
 		
 		public void ShowDoctor() {
 			EliminarVentanas();

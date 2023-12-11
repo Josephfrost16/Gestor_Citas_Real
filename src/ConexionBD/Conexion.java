@@ -14,7 +14,7 @@ public class Conexion {
 
         String url = "jdbc:mysql://localhost:3306/odontodomm?useSSL=false&serverTimezone=UTC";
         String usuario = "root"; 
-        String contraseña = "conexion123"; 
+        String contraseña = "Frosty16"; 
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");  
@@ -27,3 +27,4 @@ public class Conexion {
     }
 }
 
+// here we go again

@@ -3,8 +3,10 @@ package Paneles;
 import java.awt.Color;
 
 import javax.swing.JPanel;
+import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
+import javax.swing.JLabel;
 import javax.swing.JButton;
 
 public class Citas extends JPanel {

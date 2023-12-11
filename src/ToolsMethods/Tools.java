@@ -226,7 +226,7 @@ public class Tools {
 	        timer.schedule(actualizarHora, 0, 1000);
 	    }
 	
-	
+	// Metodo de comboBox
 	public void CmbSpecialty(JComboBox<Object> cmb, String Tabla, String Columna) {
 		  String query = "SELECT "+ Columna +" FROM "+ Tabla +";";
 
@@ -237,7 +237,7 @@ public class Tools {
 		        ComboBoxModel<Object> model = new DefaultComboBoxModel<>(); // Crear un modelo de ComboBox
 		        
 		        while (res.next()) {
-		            String nombreEspecialidad = res.getString("Nombre");
+		            String nombreEspecialidad = res.getString(Columna);
 		            ((DefaultComboBoxModel<Object>) model).addElement(nombreEspecialidad); // Agregar cada nombre de especialidad al modelo
 		        }
 
@@ -246,6 +246,8 @@ public class Tools {
 		    } catch (SQLException e) {
 		        e.printStackTrace(); // Manejo básico de excepciones
 		    }
+		    
+		    
 		
 	}
 	
