@@ -226,28 +226,28 @@ public class Tools {
 	        timer.schedule(actualizarHora, 0, 1000);
 	    }
 	
-	
 	public void CmbSpecialty(JComboBox<Object> cmb, String Tabla, String Columna) {
-		  String query = "SELECT "+ Columna +" FROM "+ Tabla +";";
+        String query = "SELECT "+ Columna +" FROM "+ Tabla +";";
 
-		    try {
-		        Statement sql = Conexion.EstablecerConexion().createStatement();
-		        ResultSet res = sql.executeQuery(query);
-		        
-		        ComboBoxModel<Object> model = new DefaultComboBoxModel<>(); // Crear un modelo de ComboBox
-		        
-		        while (res.next()) {
-		            String nombreEspecialidad = res.getString("Nombre");
-		            ((DefaultComboBoxModel<Object>) model).addElement(nombreEspecialidad); // Agregar cada nombre de especialidad al modelo
-		        }
+          try {
+              Statement sql = Conexion.EstablecerConexion().createStatement();
+              ResultSet res = sql.executeQuery(query);
 
-		        cmb.setModel(model); // Establecer el modelo en el JComboBox
+              ComboBoxModel<Object> model = new DefaultComboBoxModel<>(); // Crear un modelo de ComboBox
 
-		    } catch (SQLException e) {
-		        e.printStackTrace(); // Manejo básico de excepciones
-		    }
-		
-	}
+              while (res.next()) {
+                  String nombreEspecialidad = res.getString(Columna);
+                  ((DefaultComboBoxModel<Object>) model).addElement(nombreEspecialidad); // Agregar cada nombre de especialidad al modelo
+              }
+
+              cmb.setModel(model); // Establecer el modelo en el JComboBox
+
+          } catch (SQLException e) {
+              e.printStackTrace(); // Manejo básico de excepciones
+          }
+
+  }
+
 	
 	public void LimpiarCampos(JTextField Name,JTextField LastName,
 			JTextField Email,JTextField Phone) {
