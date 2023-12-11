@@ -119,7 +119,7 @@ public class PacientesShow extends JFrame implements Ventana {
 		UpdatePanel.setLayout(null);
 		
 		JLabel PictureUp = new JLabel("");
-		PictureUp.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\edit.png"));
+		PictureUp.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\edit.png"));
 		PictureUp.setBounds(62, 4, 32, 34);
 		UpdatePanel.add(PictureUp);
 		
@@ -130,7 +130,7 @@ public class PacientesShow extends JFrame implements Ventana {
 		UpdatePanel.add(lblNewLabel_1);
 		
 		JLabel PictureAzul = new JLabel("");
-		PictureAzul.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\editAzul.png"));
+		PictureAzul.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\editAzul.png"));
 		PictureAzul.setBounds(62, 4, 32, 34);
 		UpdatePanel.add(PictureAzul);
 		
@@ -150,7 +150,7 @@ public class PacientesShow extends JFrame implements Ventana {
 		DeletePanel.setLayout(null);
 		
 		JLabel PictureDe = new JLabel("");
-		PictureDe.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\bin.png"));
+		PictureDe.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\bin.png"));
 		PictureDe.setBounds(61, 3, 32, 34);
 		DeletePanel.add(PictureDe);
 		
@@ -161,7 +161,7 @@ public class PacientesShow extends JFrame implements Ventana {
 		DeletePanel.add(lblNewLabel_1_1);
 		
 		JLabel PictureDeAzul = new JLabel("");
-		PictureDeAzul.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\binazul.png"));
+		PictureDeAzul.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\binazul.png"));
 		PictureDeAzul.setBounds(61, 3, 32, 34);
 		DeletePanel.add(PictureDeAzul);
 		

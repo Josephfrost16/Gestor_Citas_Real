@@ -38,7 +38,7 @@ public class MenuRegister extends JPanel {
 		panelPatients.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		panelPatients.setBorder(new LineBorder(new Color(10, 59, 129)));
 		panelPatients.setBackground(new Color(255, 255, 255));
-		panelPatients.setBounds(8, 19, 213, 193);
+		panelPatients.setBounds(16, 19, 213, 193);
 		add(panelPatients);
 		panelPatients.setLayout(null);
 		
@@ -86,7 +86,7 @@ public class MenuRegister extends JPanel {
 		panelDoctor.setLayout(null);
 		panelDoctor.setBorder(new LineBorder(new Color(10, 59, 129)));
 		panelDoctor.setBackground(new Color(255, 255, 255));
-		panelDoctor.setBounds(241, 19, 213, 193);
+		panelDoctor.setBounds(249, 19, 213, 193);
 		add(panelDoctor);
 		
 		JSeparator separator_1 = new JSeparator();
@@ -132,7 +132,7 @@ public class MenuRegister extends JPanel {
 		panelAppointment.setLayout(null);
 		panelAppointment.setBorder(new LineBorder(new Color(10, 59, 129)));
 		panelAppointment.setBackground(new Color(255, 255, 255));
-		panelAppointment.setBounds(8, 236, 213, 193);
+		panelAppointment.setBounds(16, 236, 213, 193);
 		add(panelAppointment);
 		
 		JSeparator separator_2 = new JSeparator();
@@ -178,7 +178,7 @@ public class MenuRegister extends JPanel {
 		panelProcedures.setLayout(null);
 		panelProcedures.setBorder(new LineBorder(new Color(10, 59, 129)));
 		panelProcedures.setBackground(new Color(255, 255, 255));
-		panelProcedures.setBounds(241, 236, 213, 193);
+		panelProcedures.setBounds(249, 236, 213, 193);
 		add(panelProcedures);
 		
 		JSeparator separator_2_1 = new JSeparator();

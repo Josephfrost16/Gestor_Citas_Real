@@ -40,7 +40,6 @@ public class DoctorsShow extends JFrame implements Ventana {
 	DefaultTableModel modelo = T.MostrarTabla("Doctores");
 	Color azul = new Color(10, 59, 129);
 	Color blanco = new Color(255, 255, 255);
-	
 	JComboBox<?> ComboBox = new JComboBox<Object>();
 	/**
 	 * Create the frame.
@@ -59,7 +58,7 @@ public class DoctorsShow extends JFrame implements Ventana {
 		contentPane.setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\search (2).png"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\search (2).png"));
 		lblNewLabel.setBounds(422, 11, 31, 29);
 		contentPane.add(lblNewLabel);
 		
@@ -121,7 +120,7 @@ public class DoctorsShow extends JFrame implements Ventana {
 		UpdatePanel.setLayout(null);
 		
 		JLabel PictureUp = new JLabel("");
-		PictureUp.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\edit.png"));
+		PictureUp.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\edit.png"));
 		PictureUp.setBounds(62, 4, 32, 34);
 		UpdatePanel.add(PictureUp);
 		
@@ -132,7 +131,7 @@ public class DoctorsShow extends JFrame implements Ventana {
 		UpdatePanel.add(lblNewLabel_1);
 		
 		JLabel PictureAzul = new JLabel("");
-		PictureAzul.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\editAzul.png"));
+		PictureAzul.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\editAzul.png"));
 		PictureAzul.setBounds(62, 4, 32, 34);
 		UpdatePanel.add(PictureAzul);
 		
@@ -152,7 +151,7 @@ public class DoctorsShow extends JFrame implements Ventana {
 		DeletePanel.setLayout(null);
 		
 		JLabel PictureDe = new JLabel("");
-		PictureDe.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\bin.png"));
+		PictureDe.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\bin.png"));
 		PictureDe.setBounds(61, 3, 32, 34);
 		DeletePanel.add(PictureDe);
 		
@@ -163,7 +162,7 @@ public class DoctorsShow extends JFrame implements Ventana {
 		DeletePanel.add(lblNewLabel_1_1);
 		
 		JLabel PictureDeAzul = new JLabel("");
-		PictureDeAzul.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\binazul.png"));
+		PictureDeAzul.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\binazul.png"));
 		PictureDeAzul.setBounds(61, 3, 32, 34);
 		DeletePanel.add(PictureDeAzul);
 		
@@ -209,7 +208,6 @@ public class DoctorsShow extends JFrame implements Ventana {
 		    if (IdObj instanceof Integer) {
 		        Id = (Integer) IdObj;
 		    }
-		    
 				Name = (String) modelo.getValueAt(selectedrow, 1);
 			    Proname = (String) modelo.getValueAt(selectedrow, 2);
 			    String Especialidad = (String)ComboBox.getSelectedItem();

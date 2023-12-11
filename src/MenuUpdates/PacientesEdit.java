@@ -156,11 +156,7 @@ public class PacientesEdit extends JFrame implements Ventana{
 		panel.add(btnNewButton);
 	}
 	
-	
-	// Jean Carlos te invoco:
-	public void ComboBox_Expecialidad() {
-		
-	}
+
 	public void setName(String Name) {
 		this.Name.setText(Name);
 	}

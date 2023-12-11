@@ -1,12 +1,10 @@
 package Registro;
 
-//Clase Usuarios
 public class Usuarios {
 
 	private String Nombre;
 	private String Correo;
 	private String Contraseña;
-	
 	
 	public Usuarios (String N, String C, String CN) {
 		this.setNombre(N);
@@ -15,7 +13,6 @@ public class Usuarios {
 	}
 
 	//Methods
-	
 	public String getNombre() {
 		return Nombre;
 	}
@@ -41,7 +38,6 @@ public class Usuarios {
 	}
 	
 	//Methods
-
 	//Clase Administrador Hereda de Usuarios
 	public class Administrador extends Usuarios{
 		int NivelAcceso;

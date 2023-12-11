@@ -146,7 +146,7 @@ public class JSign implements Ventana {
 				frmSignUp.dispose();
 			}
 		});
-		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\exit.png"));
+		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\exit.png"));
 		lblNewLabel_2.setBounds(583, 4, 33, 44);
 		frmSignUp.getContentPane().add(lblNewLabel_2);
 		
@@ -241,8 +241,7 @@ public class JSign implements Ventana {
 							String query2 = "INSERT INTO Usuarios(Nombre,Correo, Contraseña) VALUES ("
 									+ "'"+User.getNombre()+"',"
 									+ "'"+User.getCorreo()+"',"
-									+ "'"+User.getContraseña()+"',"
-									+"'Usuarios'"
+									+ "'"+User.getContraseña()+"'"
 									+ ");";
 							
 							Statement sql2 = Conexion.EstablecerConexion().createStatement();

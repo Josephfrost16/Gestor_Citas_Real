@@ -268,7 +268,7 @@ public class JLogin implements Ventana{
 		});
 		lblNewLabel_2.setBounds(16, 7, 33, 44);
 		frmSignIn.getContentPane().add(lblNewLabel_2);
-		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\exit.png"));
+		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\exit.png"));
 		frmSignIn.setLocationRelativeTo(null);
 	}
 

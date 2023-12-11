@@ -97,7 +97,7 @@ public class RegistrarCitas extends JPanel {
 		panelbotones.add(separadorbotones);
 		
 		JButton btnSave = new JButton("Save");
-		btnSave.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\diskette.png"));
+		btnSave.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\diskette.png"));
 		btnSave.setForeground(Color.WHITE);
 		btnSave.setFont(new Font("Segoe UI", Font.BOLD, 11));
 		btnSave.setFocusable(false);
@@ -109,7 +109,7 @@ public class RegistrarCitas extends JPanel {
 		panelbotones.add(btnSave);
 		
 		JButton btnUpdate = new JButton("Update\r\n");
-		btnUpdate.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\edita.png"));
+		btnUpdate.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\edita.png"));
 		btnUpdate.setForeground(Color.WHITE);
 		btnUpdate.setFont(new Font("Segoe UI", Font.BOLD, 11));
 		btnUpdate.setFocusable(false);
@@ -121,7 +121,7 @@ public class RegistrarCitas extends JPanel {
 		panelbotones.add(btnUpdate);
 		
 		JButton btnDelete = new JButton("Delete");
-		btnDelete.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\delete.png"));
+		btnDelete.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\delete.png"));
 		btnDelete.setForeground(Color.WHITE);
 		btnDelete.setFont(new Font("Segoe UI", Font.BOLD, 11));
 		btnDelete.setFocusable(false);
@@ -133,7 +133,7 @@ public class RegistrarCitas extends JPanel {
 		panelbotones.add(btnDelete);
 		
 		JButton btnNew = new JButton("New");
-		btnNew.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\add.png"));
+		btnNew.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\add.png"));
 		btnNew.setForeground(Color.WHITE);
 		btnNew.setFont(new Font("Segoe UI", Font.BOLD, 11));
 		btnNew.setFocusable(false);

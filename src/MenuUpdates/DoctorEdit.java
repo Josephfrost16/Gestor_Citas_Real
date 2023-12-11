@@ -122,11 +122,11 @@ public class DoctorEdit extends JFrame implements Ventana{
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Tools t = new Tools();
-				t.ActualizarDatos("Doctores",id2, "Nombres", Name.getText(),"DoctorID");
-				t.ActualizarDatos("Doctores",id2, "Apellido", proname.getText(),"DoctorID");
-				t.ActualizarDatos("Doctores",id2, "EspecialidadID", String.valueOf(comboBox_Esp.getSelectedIndex()),"DoctorID");
-				t.ActualizarDatos("Doctores",id2, "Email", email.getText(),"DoctorID");
-				t.ActualizarDatos("Doctores",id2, "Telefono", phone.getText(),"DoctorID");
+				t.ActualizarDatosC("Doctores",id2, "Nombres", Name.getText(),"DoctorID");
+				t.ActualizarDatosC("Doctores",id2, "Apellido", proname.getText(),"DoctorID");
+				t.ActualizarDatosC("Doctores",id2, "EspecialidadID", String.valueOf(comboBox_Esp.getSelectedIndex()),"DoctorID");
+				t.ActualizarDatosC("Doctores",id2, "Email", email.getText(),"DoctorID");
+				t.ActualizarDatosC("Doctores",id2, "Telefono", phone.getText(),"DoctorID");
 				instanciaJMenuAdmin.ShowDoctor();
 				
 				dispose();

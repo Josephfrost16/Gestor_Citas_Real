@@ -61,7 +61,7 @@ public class Tools {
 	
 	
 	
-	public void ActualizarDatos(String NombreTabla, int id, String column, Object object,String WhereColumn ) {
+	public void ActualizarDatos(String NombreTabla, int id, String column, String object,String WhereColumn ) {
 		 try {
 			 String consulta = "UPDATE " +  NombreTabla + " SET "+ column +" = " + "'" + object +"'" + " Where "+ WhereColumn +" = " + id;
 			 Statement sql = Conexion.EstablecerConexion().createStatement();
@@ -90,7 +90,7 @@ public class Tools {
 		 }
 	}
 	//Sobrecarga para el comboBox
-	public void ActualizarDatos(String NombreTabla, int id, String column, String Especialidad,String WhereColumn ) {
+	public void ActualizarDatosC(String NombreTabla, int id, String column, String Especialidad,String WhereColumn ) {
 		 try {
 			 String consulta = "UPDATE " +  NombreTabla + " SET "+ column +" = " + "'" + Especialidad+"'" + " Where "+ WhereColumn +" = '" + id + "'";
 			 Statement sql = Conexion.EstablecerConexion().createStatement();

@@ -14,6 +14,9 @@ import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.UIManager;
 import javax.swing.border.TitledBorder;
+
+import ToolsMethods.Tools;
+
 import javax.swing.JTextPane;
 import javax.swing.border.LineBorder;
 import javax.swing.ImageIcon;
@@ -22,7 +25,8 @@ public class RegisterProcess extends JPanel {
 
 	private static final long serialVersionUID = 1L;
 	private JTable table;
-	private JTextField textField;
+	private JTextField NameTxT;
+	Tools T = new Tools();
 	/**
 	 * Create the panel.
 	 */
@@ -48,7 +52,7 @@ public class RegisterProcess extends JPanel {
 		panelbotones.add(separadorbotones);
 		
 		JButton btnSave = new JButton("Save");
-		btnSave.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\diskette.png"));
+		btnSave.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\diskette.png"));
 		btnSave.setForeground(Color.WHITE);
 		btnSave.setFont(new Font("Segoe UI", Font.BOLD, 11));
 		btnSave.setFocusable(false);
@@ -60,7 +64,7 @@ public class RegisterProcess extends JPanel {
 		panelbotones.add(btnSave);
 		
 		JButton btnUpdate = new JButton("Update\r\n");
-		btnUpdate.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\edita.png"));
+		btnUpdate.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\edita.png"));
 		btnUpdate.setForeground(Color.WHITE);
 		btnUpdate.setFont(new Font("Segoe UI", Font.BOLD, 11));
 		btnUpdate.setFocusable(false);
@@ -72,7 +76,7 @@ public class RegisterProcess extends JPanel {
 		panelbotones.add(btnUpdate);
 		
 		JButton btnDelete = new JButton("Delete");
-		btnDelete.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\delete.png"));
+		btnDelete.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\delete.png"));
 		btnDelete.setForeground(Color.WHITE);
 		btnDelete.setFont(new Font("Segoe UI", Font.BOLD, 11));
 		btnDelete.setFocusable(false);
@@ -84,7 +88,7 @@ public class RegisterProcess extends JPanel {
 		panelbotones.add(btnDelete);
 		
 		JButton btnNew = new JButton("New");
-		btnNew.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\add.png"));
+		btnNew.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\add.png"));
 		btnNew.setForeground(Color.WHITE);
 		btnNew.setFont(new Font("Segoe UI", Font.BOLD, 11));
 		btnNew.setFocusable(false);
@@ -144,12 +148,12 @@ public class RegisterProcess extends JPanel {
 		lblname.setBounds(10, 22, 131, 14);
 		panelpacientes.add(lblname);
 		
-		textField = new JTextField();
-		textField.setFont(new Font("Segoe UI", Font.PLAIN, 11));
-		textField.setColumns(10);
-		textField.setBackground(UIManager.getColor("Button.background"));
-		textField.setBounds(10, 40, 208, 20);
-		panelpacientes.add(textField);
+		NameTxT = new JTextField();
+		NameTxT.setFont(new Font("Segoe UI", Font.PLAIN, 11));
+		NameTxT.setColumns(10);
+		NameTxT.setBackground(UIManager.getColor("Button.background"));
+		NameTxT.setBounds(10, 40, 208, 20);
+		panelpacientes.add(NameTxT);
 		
 		JLabel lblphone = new JLabel("Specialty");
 		lblphone.setForeground(new Color(5, 30, 67));
@@ -163,7 +167,8 @@ public class RegisterProcess extends JPanel {
 		lblemail.setBounds(9, 111, 125, 14);
 		panelpacientes.add(lblemail);
 		
-		JComboBox<?> comboBox = new JComboBox<Object>();
+		JComboBox<Object> comboBox = new JComboBox<Object>();
+		T.CmbSpecialty(comboBox, "Especialidad", "Nombre");
 		comboBox.setFocusable(false);
 		comboBox.setFocusTraversalKeysEnabled(false);
 		comboBox.setLightWeightPopupEnabled(false);

@@ -45,7 +45,6 @@ public class Pacientes extends JPanel {
 	Tools T = new Tools();
 	@SuppressWarnings("unused")
 	private JMenuAdmin instanciaJMenuAdmin; 
-	
 	/**
 	 * Create the panel.
 	 */
@@ -189,7 +188,6 @@ public class Pacientes extends JPanel {
 								JOptionPane.showMessageDialog(null, mensaje);
 								
 							}else {
-								
 									try {
 										Statement sql2 = Conexion.EstablecerConexion().createStatement();
 									
@@ -207,12 +205,12 @@ public class Pacientes extends JPanel {
 										ResultSet res = sql2.executeQuery(query3);	
 										int id;
 										String SId = "";
-											
+										
 											while(res.next()) {
 												id = res.getInt("PacienteID");
 												SId = String.valueOf(id);
 											}		
-										
+											
 										Object[] nuevaFila = {SId, NameTxt.getText(), PronameTxt.getText(), EmailTxt.getText(), PhoneTxt.getText(), DateTxt.getText(), IDTxt.getText()};
 										modelo.addRow(nuevaFila);
 										modelo.fireTableDataChanged();
@@ -235,8 +233,8 @@ public class Pacientes extends JPanel {
 			}
 			
 		}
-				);
-		btnSave.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\diskette.png"));
+	);
+		btnSave.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\diskette.png"));
 		btnSave.setBackground(new Color(7, 43, 95));
 		btnSave.setFocusable(false);
 		btnSave.setFocusTraversalKeysEnabled(false);
@@ -257,7 +255,7 @@ public class Pacientes extends JPanel {
 		btnShow.setBorderPainted(false);
 		btnShow.setForeground(new Color(255, 255, 255));
 		btnShow.setFont(new Font("Segoe UI", Font.BOLD, 11));
-		btnShow.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\printer.png"));
+		btnShow.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\printer.png"));
 		btnShow.setBackground(new Color(7, 43, 95));
 		btnShow.setFocusable(false);
 		btnShow.setFocusTraversalKeysEnabled(false);
@@ -303,29 +301,15 @@ public class Pacientes extends JPanel {
 					edit.ShowVentana();	
 					edit.setInstanciaJMenuAdmin(instanciaJMenuAdmin);
 				}
-							}
+			}
 		});
-		btnUpdate.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\edit2.png"));
+		btnUpdate.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\edita.png"));
 		btnUpdate.setBackground(new Color(7, 43, 95));
 		btnUpdate.setFocusable(false);
 		btnUpdate.setFocusTraversalKeysEnabled(false);
 		btnUpdate.setFocusPainted(false);
-		btnUpdate.setBounds(10, 96, 99, 34);
+		btnUpdate.setBounds(10, 96, 202, 34);
 		panelbotones.add(btnUpdate);
-		
-		JButton btnRefresh = new JButton("Refresh");
-		T.pintarBotones(btnRefresh);
-		btnRefresh.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		btnRefresh.setBorderPainted(false);
-		btnRefresh.setForeground(new Color(255, 255, 255));
-		btnRefresh.setFont(new Font("Segoe UI", Font.BOLD, 11));
-		btnRefresh.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\refresh (1).png"));
-		btnRefresh.setBackground(new Color(7, 43, 95));
-		btnRefresh.setFocusable(false);
-		btnRefresh.setFocusTraversalKeysEnabled(false);
-		btnRefresh.setFocusPainted(false);
-		btnRefresh.setBounds(114, 96, 99, 34);
-		panelbotones.add(btnRefresh);
 		
 		// Revisar explosion de repeticion.
 		JButton btnDelete = new JButton("Delete");
@@ -345,7 +329,7 @@ public class Pacientes extends JPanel {
 				}
 			}
 		});
-		btnDelete.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\delete.png"));
+		btnDelete.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\delete.png"));
 		btnDelete.setBackground(new Color(7, 43, 95));
 		btnDelete.setFocusable(false);
 		btnDelete.setFocusTraversalKeysEnabled(false);
@@ -365,7 +349,7 @@ public class Pacientes extends JPanel {
 			}
 		});
 		
-		btnNew.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\add.png"));
+		btnNew.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas_5\\Gestor_Citas_Real\\imagenes\\add.png"));
 		btnNew.setBackground(new Color(7, 43, 95));
 		btnNew.setFocusable(false);
 		btnNew.setFocusTraversalKeysEnabled(false);

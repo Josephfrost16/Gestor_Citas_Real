@@ -1,5 +1,3 @@
-
-
 package MenuRegisters;
 
 import javax.swing.JPanel;
@@ -10,13 +8,11 @@ import java.awt.Font;
 import javax.swing.JTable;
 import javax.swing.border.TitledBorder;
 import javax.swing.table.DefaultTableModel;
-
 import ConexionBD.Conexion;
 import MenuAdmin.JMenuAdmin;
 import MenuShow.DoctorsShow;
 import MenuUpdates.DoctorEdit;
 import ToolsMethods.Tools;
-
 import javax.swing.UIManager;
 import javax.swing.JScrollPane;
 import java.awt.Component;
@@ -135,7 +131,7 @@ public class RegisterDoctor extends JPanel {
 											}
 											
 											Object[] nuevaFila = {Sid,Nametxt.getText(), LastNametxt.getText(), 
-													Emailtxt.getText(),comboBx_Especialidad.getSelectedItem(), 
+													comboBox_ID,Emailtxt.getText(), 
 													Phonetxt.getText()};
 											
 										modelo.addRow(nuevaFila);
@@ -191,7 +187,7 @@ public class RegisterDoctor extends JPanel {
 			}
 		});
 		
-		// Recuerda hacer la ventana de Update (Para Joseph del futuro):
+		//Update Button
 		JButton btnUpdate = new JButton("Update\r\n");
 		btnUpdate.setIcon(new ImageIcon("C:\\Users\\jeanc\\OneDrive\\Documentos\\ITLA CLASES\\[3] TERCER CUATRIMESTRE\\PROGRAMACION 1\\PROYECTOS\\Gestor_Citas\\imagenes\\edita.png"));
 		btnUpdate.setForeground(Color.WHITE);
