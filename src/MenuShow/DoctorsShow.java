@@ -22,7 +22,6 @@ import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 import MenuAdmin.JMenuAdmin;
-import MenuRegisters.RegisterDoctor;
 import MenuUpdates.DoctorEdit;
 import ToolsMethods.Tools;
 import ToolsMethods.Ventana;
@@ -42,8 +41,7 @@ public class DoctorsShow extends JFrame implements Ventana {
 	Color azul = new Color(10, 59, 129);
 	Color blanco = new Color(255, 255, 255);
 	
-	RegisterDoctor Doctor = new RegisterDoctor(instancia);
-	JComboBox ComboBox = new JComboBox();
+	JComboBox<?> ComboBox = new JComboBox<Object>();
 	/**
 	 * Create the frame.
 	 */
@@ -228,8 +226,6 @@ public class DoctorsShow extends JFrame implements Ventana {
 				edit.setid(Id);
 				edit.ShowVentana();	
 				edit.setInstanciaJMenuAdmin(instancia);
-	 }
+	 	}
 	 
 	}
-
-

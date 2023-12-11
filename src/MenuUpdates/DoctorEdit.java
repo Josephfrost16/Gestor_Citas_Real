@@ -9,22 +9,15 @@ import ToolsMethods.Ventana;
 import javax.swing.JSeparator;
 import java.awt.Color;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
 import javax.swing.border.LineBorder;
-
-import ConexionBD.Conexion;
 import MenuAdmin.JMenuAdmin;
 import javax.swing.JComboBox;
 
-// Ventana de Updates.
 public class DoctorEdit extends JFrame implements Ventana{
 
 	private static final long serialVersionUID = 1L;
@@ -33,7 +26,7 @@ public class DoctorEdit extends JFrame implements Ventana{
 	private JTextField proname;
 	private JTextField email;
 	private JTextField phone;
-	private JComboBox comboBox_Esp;
+	private JComboBox<Object> comboBox_Esp;
 	int id2;
 	private JMenuAdmin instanciaJMenuAdmin;
 	Tools t = new Tools();
@@ -120,7 +113,7 @@ public class DoctorEdit extends JFrame implements Ventana{
 		lblNewLabel_1_4.setBounds(10, 133, 131, 14);
 		panel.add(lblNewLabel_1_4);
 		
-		comboBox_Esp = new JComboBox();
+		comboBox_Esp = new JComboBox<Object>();
 		comboBox_Esp.setBounds(87, 131, 131, 21);
 		Especialidad_values(comboBox_Esp);
 		panel.add(comboBox_Esp);
@@ -178,11 +171,10 @@ public class DoctorEdit extends JFrame implements Ventana{
 	
 	@Override
 	public void ShowVentana() {
-		// TODO Auto-generated method stub
 		this.setVisible(true);
 	}
 	
-	public void Especialidad_values(JComboBox ComboBox) {
+	public void Especialidad_values(JComboBox<Object> ComboBox) {
 		t.CmbSpecialty(ComboBox,"Especialidad","Nombre");
 	}
 	public void setEspecialidad(String selectedRow) {

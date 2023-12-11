@@ -14,7 +14,7 @@ import java.awt.Component;
 import javax.swing.JComboBox;
 import javax.swing.JFormattedTextField;
 import javax.swing.ImageIcon;
-import javax.swing.DefaultComboBoxModel;
+
 
 public class RegistrarCitas extends JPanel {
 
@@ -28,7 +28,6 @@ public class RegistrarCitas extends JPanel {
 		setBounds(0,0,481, 452);
 		setBackground(new Color(245, 245, 245));
 		setLayout(null);
-		
 		JSeparator separator_1 = new JSeparator();
 		separator_1.setBackground(new Color(0, 0, 64));
 		separator_1.setBounds(10, 28, 461, 10);
@@ -82,7 +81,7 @@ public class RegistrarCitas extends JPanel {
 		FechaTxt.setBounds(11, 128, 205, 23);
 		panelpacientes.add(FechaTxt);
 		
-		JComboBox comboBox = new JComboBox();
+		JComboBox<Object> comboBox = new JComboBox<Object>();
 		comboBox.setBounds(10, 180, 209, 22);
 		panelpacientes.add(comboBox);
 		
