@@ -272,7 +272,7 @@ public class JMenuAdmin implements Ventana {
 		
 		public void ShowProcess() {
 			EliminarVentanas();
-			RegisterProcess doc = new RegisterProcess();
+			RegisterProcess doc = new RegisterProcess(this);
 			doc.setBounds(0, 0, 481, 452);
 			contenedor.add(doc, BorderLayout.CENTER);
 			contenedor.revalidate();
