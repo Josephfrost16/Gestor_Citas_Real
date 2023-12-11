@@ -244,8 +244,8 @@ public class JSign implements Ventana {
 									+ "'"+User.getContraseña()+"',"
 									+"'Usuarios'"
 									+ ");";
+							
 							Statement sql2 = Conexion.EstablecerConexion().createStatement();
-
 							
 							sql2.executeUpdate(query2);
 							sql2.close();

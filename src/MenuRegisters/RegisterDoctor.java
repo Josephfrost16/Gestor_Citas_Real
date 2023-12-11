@@ -121,12 +121,13 @@ public class RegisterDoctor extends JPanel {
 											+ "'" + LastNametxt.getText()+"',"
 											+ "'" + comboBox_ID + "',"
 											+ "'" + Emailtxt.getText()+ "',"
-											+ "'" + Phonetxt.getText() + "');";			
+											+ "'" + Phonetxt.getText() + "');";		
 										
 										sql2.executeUpdate(consulta2);
 										
+										Statement sql3 = Conexion.EstablecerConexion().createStatement();	
 										String consulta3 = "Select DoctorID From Doctores where Nombres = '"+Nametxt.getText()+"'";
-										ResultSet res = sql2.executeQuery(consulta3);	
+										ResultSet res = sql3.executeQuery(consulta3);
 										
 										int id;
 										String Sid = "";
@@ -136,7 +137,8 @@ public class RegisterDoctor extends JPanel {
 											}
 											
 											Object[] nuevaFila = {Sid,Nametxt.getText(), LastNametxt.getText(), 
-													Emailtxt.getText(), Phonetxt.getText()};
+													Emailtxt.getText(),comboBx_Especialidad.getSelectedItem(), 
+													Phonetxt.getText()};
 											
 										modelo.addRow(nuevaFila);
 										modelo.fireTableDataChanged();
@@ -256,11 +258,13 @@ public class RegisterDoctor extends JPanel {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				int Id = DoctorTable.getSelectedRow();
-				if (Id >=0 && Id <= modelo.getRowCount()) {
-					t.EliminarDatos(Id,"Doctores","DoctorID");
-					modelo.removeRow(Id);
-				}
+				 int selectedrow = DoctorTable.getSelectedRow();
+					if(selectedrow >= 0 && selectedrow < modelo.getRowCount()) {
+						int id = (int) modelo.getValueAt(selectedrow, 0);
+						t.EliminarDatos(id,"Doctores","DoctorID");
+						modelo.removeRow(selectedrow);}
+					
+					modelo.fireTableDataChanged();
 			}			
 		});
 		

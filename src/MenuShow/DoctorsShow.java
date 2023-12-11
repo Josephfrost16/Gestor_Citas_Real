@@ -42,7 +42,6 @@ public class DoctorsShow extends JFrame implements Ventana {
 	Color azul = new Color(10, 59, 129);
 	Color blanco = new Color(255, 255, 255);
 	
-	RegisterDoctor Doctor = new RegisterDoctor(instancia);
 	JComboBox ComboBox = new JComboBox();
 	/**
 	 * Create the frame.
@@ -228,7 +227,7 @@ public class DoctorsShow extends JFrame implements Ventana {
 				edit.setid(Id);
 				edit.ShowVentana();	
 				edit.setInstanciaJMenuAdmin(instancia);
-	 }
+	 	}
 	 
 	}
 
